@@ -16,6 +16,8 @@ app.use("/", apiLimiter);
 
 app.use(cors())
 
+let server
+
 async function runApi() {
 
   const poloniex = new Poloniex() 
@@ -51,10 +53,10 @@ async function runApi() {
 
   
   
-  app.listen(config.port, () => console.log('App listening on port ' + config.port))  
+  server = app.listen(config.port, () => console.log('App listening on port ' + config.port))  
 }
 
 runApi()
 
 // exported for testing
-module.exports = app; 
+module.exports = server; 

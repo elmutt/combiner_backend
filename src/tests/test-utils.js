@@ -8,6 +8,8 @@ const Kraken = require('../exchanges/Kraken')
 
 describe('utils testing', function () {
 
+
+  
   it('should test that detectOverlap() works correctly', async function () {
 
     const poloniex = new Poloniex()
@@ -81,5 +83,4 @@ describe('utils testing', function () {
     assert(typeof results[0].exchange === 'string')
     
   })
-  
 })

@@ -1,5 +1,5 @@
 const assert = require('assert')
-const app = require('../index')
+const server = require('../index')
 const fetch = require('node-fetch')
 
 describe('api testing', function () {
@@ -27,5 +27,8 @@ describe('api testing', function () {
       assert(typeof res === 'object')
     })
   })
-  
+
+  after('closing server connection', () => {
+    server.close()
+  })
 })

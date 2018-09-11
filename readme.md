@@ -27,6 +27,9 @@ with large number of possible quote symbols.  ETH-BTC is the default pair if non
 
 1. Run `npm test` from the project root
 
+Note that the backend server cannot be running while tests are running so that listening ports
+do not conflict.
+
 ## Notes
 
 #### Price Precision

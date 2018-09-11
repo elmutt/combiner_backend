@@ -36,7 +36,7 @@ describe('utils testing', function () {
     const base = 'BTC'
     const quote = 'ETH'
     const precision = 8
-    const exchanges = [bittrex, poloniex, binance, hitbtc, kraken] // TODO
+    const exchanges = [bittrex, poloniex, binance, hitbtc, kraken]
 
     const results = await utils.getCombinedOrderBook(base, quote, exchanges, precision)
 
@@ -68,7 +68,7 @@ describe('utils testing', function () {
     const base = 'BTC'
     const quote = 'ETH'
     const precision = 8
-    const exchanges = [bittrex, poloniex, binance, hitbtc, kraken] // TODO
+    const exchanges = [bittrex, poloniex, binance, hitbtc, kraken]
     
     const results = await utils.getOrderBooks(base, quote, exchanges, precision)
     

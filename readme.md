@@ -13,7 +13,7 @@ It offers the ability to choose from ETH or BTC as the base symbol to be paired
 with large number of possible quote symbols.  ETH-BTC is the default pair if none are specified.
 
 
-##Setup
+## Setup
 
 1. Install Node js 8 or higher
 
